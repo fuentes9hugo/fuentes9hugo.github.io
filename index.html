@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizamos tu viaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz@12..36&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb00f18dc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Nav menu START-->
+    <nav>
+        <ul>
+            <li><a href="#fates">Destinos</a></li>
+            <li><a id="menu-logo" href="#"><img src="./images/logo-menu.png" alt="Logo"></a></li>
+            <li><a href="#contact">Contactar</a></li>
+        </ul>
+    </nav>
+    <!--Nav menu END-->
+    <article>
+        <!--Header section-->
+        <header>
+            <div id="header-card">
+                <div class="header-card-content">
+                    <h1>Tu <span style="color: #667F61;">Próxima Aventura</span> Empieza Aquí</h1>
+                    <p>Olvídate de los itinerarios genéricos. Déjanos transformar tu visión en una experiencia personalizada. Diseñamos viajes que son tan únicos como tú. Cuéntanos tus sueños y crearemos una ruta inolvidable, hecha a medida para explorar el mundo a tu propio ritmo</p>
+                </div>
+                <div class="header-card-image">
+                    <img src="./images/avion.webp" alt="Avión cartoon">
+                </div>
+            </div>
+        </header>
+        <!--END Header section-->
+        <!--Places section START-->
+        <section id="fates">
+            <h3>Viajar nunca fue tan fácil</h3>
+            <h2>Destinos adaptados a tus preferencias</h2>
+            <div class="grid-fates">
+                <div class="destiny-card" style="background-image: url(./images/oporto.webp);">
+                    <h4>Oporto</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/budapest.webp);">
+                    <h4>Budapest</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/varsovia.webp);">
+                    <h4>Varsovia</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/rumania.webp);">
+                    <h4>Rumanía</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/viena.webp);">
+                    <h4>Viena</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/milan.webp);">
+                    <h4>Milan</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/praga.webp);">
+                    <h4>Praga</h4>
+                </div>
+                <div class="destiny-card" style="background-image: url(./images/brujas.webp);">
+                    <h4>Brujas</h4>
+                </div>
+            </div>
+        </section>
+        <!--END Places section-->
+        <!--Notes section-->
+        <section id="fates-notes">
+            <div class="grid-notes">
+                <div id="note1"></div>
+                <div id="note2">
+                    <h3>Viaje con Confianza</h3>
+                    <p>Te proporcionamos asistencia continua antes, durante y después de tu aventura</p>
+                </div>
+                <div id="note3">
+                    <video autoplay muted loop playsinline>
+                        <source src="./media/mar.webm" type="video/webm">
+                    </video>
+                </div>
+                <div id="note4">
+                    <h3>Organización sin Esfuerzo</h3>
+                    <p>Nosotros nos encargamos de las reservas: vuelos, alojamientos y traslados</p>
+                </div>
+                <div id="note5"></div>
+                <div id="note6">
+                    <h3>Diseño a tu Medida</h3>
+                    <p>Analizamos tus gustos, presupuesto y ritmos de viaje para elaborar una propuesta inicial. No usamos plantillas: cada itinerario es único, pensado para ti, desde los Alpes a la costa</p>
+                </div>
+            </div>
+        </section>
+        <!--END Notes section-->
+        <!--Contact form section-->
+        <section id="contact">
+            <div class="contact-card">
+                <div id="image-form">
+                    <img src="./images/globo.webp" alt="Viaje en globo">
+                </div>
+                <div id="contact-form">
+                    <h2>¡Empieza tu aventura!</h2>
+                    <form action="#" method="post">
+                        <div class="item-form">
+                            <label for="nombre"><i class="fa-solid fa-user"></i> Nombre</label>
+                            <input type="text" id="nombre" name="nombre" minlength="2" max="64" required>
+                        </div>
+                        <div class="item-form" minlength="10" max="128" required>
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="item-form">
+                            <label for="mensaje"><i class="fa-solid fa-message"></i> Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="submit-container">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--END Contact form section-->
+        <!--Footer section-->
+        <footer>
+            <img src="./images/logo-footer.png" alt="Logo">
+            <h4>Viajes a medida</h4>
+        </footer>
+        <!--END Footer-->
+    </article>
+</body>
+</html>
